@@ -2,46 +2,46 @@
 
 public class Quiz extends Coursework {
 
-   //create the variables 
-   private int chapter; //what chapter the quiz is on. Each quiz is on a single chapter. 
+   //Create the variables 
+   private int chapter; //Each quiz is on a single chapter. 
    private String subject; 
    
-   //default constructor 
+   //Default constructor 
    public Quiz() {
    }
    
-   //Call superclass's default constructor to initialize variables for us 
+   //Call superclass's default constructor to initialize variables
    public Quiz(int chapter, String subject) {
-      super(); //the superclass's constructor will be called 
-      this.chapter = chapter; //set the chapter 
+      super(); //The superclass's constructor will be called 
+      this.chapter = chapter; //Set the chapter 
       this.subject = subject; 
    }
    
-   //create another constructor 
+   //Create another constructor 
    public Quiz(int chapter, String subject, String format, double timeAllotted) {
-      super(format, timeAllotted); //this will call Coursework(format, timeAllotted) 
+      super(format, timeAllotted); //This will call Coursework(format, timeAllotted) 
       this.chapter = chapter; 
       this.subject = subject; 
    }
    
    //GETTERS AND SETTERS FOR THE CHAPTER AND SUBJECT 
    
-   //chapter getter 
+   //Chapter getter 
    public int getChapter() {
       return chapter;
    }
    
-   //chapter setter 
+   //Chapter setter 
    public void setChapter(int chapter) {
       this.chapter = chapter;
    }
    
-   //subject getter
+   //Subject getter
    public String getSubject() {
       return subject;
    } 
    
-   //subject setter
+   //Subject setter
    public void setSubject(String subject) {
       this.subject = subject;
    }
@@ -50,7 +50,7 @@ public class Quiz extends Coursework {
       System.out.println("The quiz was last accessed " + toString()); 
    }
    
-   //create a new toString method 
+   //Create a new toString method 
    public String toString() { 
       return "Quiz " + ", Format: " + getFormat() + ", Subject: " + getSubject() + ", Chapter: " + getChapter() + super.toString();
    }

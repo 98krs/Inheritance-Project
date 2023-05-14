@@ -3,10 +3,10 @@
 
 public class Coursework {
    
-   //create the variables that will apply to all subclasses 
+   //Create the variables that will apply to all subclasses 
    private String format = "Short answer and multiple choice"; //format = short answer, multiple choice
-   private double timeAllotted = 1; //create timeAllotted variable to hold how much time is allowed to complete the assignment 
-   private java.util.Date dateCourseworkLastAccessed; //creates a timestamp for the last time the coursework was accessed 
+   private double timeAllotted = 1; //Create timeAllotted variable to hold how much time is allowed to complete the assignment 
+   private java.util.Date dateCourseworkLastAccessed; //Creates a timestamp for the last time the coursework was accessed 
    
    //Create default constructor 
    public Coursework() {
@@ -15,7 +15,7 @@ public class Coursework {
    
    //Make another constructor which takes in parameters 
    public Coursework(String format, double timeAllotted) {
-      dateCourseworkLastAccessed = new java.util.Date(); //initializes the date object 
+      dateCourseworkLastAccessed = new java.util.Date(); //Initializes the date object 
       this.format = format;
       this.timeAllotted = timeAllotted; 
    }
@@ -43,7 +43,6 @@ public class Coursework {
    }
    
    //to string method 
-
    public String toString() {
       return "Date coursework last accessed: " + dateCourseworkLastAccessed + ", Format: " + format + ", Time allotted: " + timeAllotted + " hours";
    }
